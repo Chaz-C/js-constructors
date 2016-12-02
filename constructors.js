@@ -19,6 +19,15 @@
    * @return {string} details containing all of the spells information.
    */
 
+ function Spell(name, cost, description) {
+    this.name = name;
+    this.cost = cost;
+    this.description = description;
+    this.getDetails = function() {
+      return 'spell name = ' + name + ' cost = ' + cost + ' description = ' + description;
+    };
+ }
+
 /**
  * A spell that deals damage.
  * We want to keep this code DRY (Don't Repeat Yourself).
